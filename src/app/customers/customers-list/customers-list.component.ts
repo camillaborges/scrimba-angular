@@ -14,8 +14,15 @@ export class CustomersListComponent implements OnInit {
   
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { 
     
+  }
+
+  calculateOrders() {
+    this.customersOrderTotal = 0;
+    this.filteredCustomers.forEach((cust: ICustomer) => {
+      this.customersOrderTotal += cust.orderTotal!;
+    });
   }
 
 }
