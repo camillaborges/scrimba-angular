@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CustomersModule } from './customers.module';
 import { SharedModule } from './shared/shared.module';
+import { CustomersModule } from './customers.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
